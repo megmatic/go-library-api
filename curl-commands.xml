@@ -2,5 +2,8 @@
 [GET] Get all books:
 curl localhost:8080/books 
 
+[GET] Get book by ID:
+curl localhost:8080/books/{id}
+
 [POST] Create a new book and add to all books:
 curl localhost:8080/books --include --header "Content-Type: application/json" -d @body.json --request "POST"
